@@ -10,6 +10,20 @@
     <link rel="icon" href="{{ asset('images/favicon.png') }}">
 
     @include('includes.main-css')
+
+    <style>
+        html {
+            background: url({{ asset('images/revenue.jpg')}}) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+
+    <style>
+
+    </style>
 </head>
 
 <body class="c-app">

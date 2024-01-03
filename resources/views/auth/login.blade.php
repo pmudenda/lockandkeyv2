@@ -15,11 +15,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 
+
+<style>
+    body {
+        background-image: url('images/revenue.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+</style>
 <body class="c-app flex-row align-items-center">
 <div class="container">
     <div class="row mb-3">
         <div class="col-12 d-flex justify-content-center">
-            <img width="200" src="{{ asset('images/logo.png') }}" alt="Logo">
+            <img class="rounded-circle shadow-4-strong" width="200" src="{{ asset('images/logo.png') }}" alt="Logo">
         </div>
     </div>
     <div class="row justify-content-center">
@@ -33,7 +42,6 @@
                 <div class="card-body">
                     <form id="login" method="post" action="{{ url('/login') }}">
                         @csrf
-                        <h1>Login</h1>
                         <p class="text-muted">Sign In to your account</p>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
