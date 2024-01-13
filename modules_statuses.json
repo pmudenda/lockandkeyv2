@@ -5,6 +5,7 @@
     "Adjustment": true,
     "Expense": true,
     "People": true,
+    "Store": true,
     "Currency": true,
     "Setting": true,
     "Sale": true,

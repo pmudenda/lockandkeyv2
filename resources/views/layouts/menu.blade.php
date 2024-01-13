@@ -229,6 +229,13 @@
                     </a>
                 </li>
             @endcan
+            @can('access_stores') 
+              <li class="c-sidebar-nav-item">
+                    <a class="c-sidebar-nav-link {{ request()->routeIs('stores.*') ? 'c-active' : '' }}"  href="{{ route('store.index') }}"  >  
+                        <i class="c-sidebar-nav-icon bi bi-people-fill" style="line-height: 1;"></i> Stores
+                    </a>
+                </li> 
+             @endcan
         </ul>
     </li>
 @endcan
@@ -294,6 +301,7 @@
                     <i class="c-sidebar-nav-icon bi bi-key" style="line-height: 1;"></i> Roles & Permissions
                 </a>
             </li>
+           
         </ul>
     </li>
 @endcan

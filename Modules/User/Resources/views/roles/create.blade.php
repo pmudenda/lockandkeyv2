@@ -820,6 +820,35 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <!-- STORE -->
+                                <div class="col-lg-4 col-md-6 mb-3">
+                                    <div class="card h-100 border-0 shadow">
+                                        <div class="card-header">
+                                            Stores
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="custom-control custom-switch">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                               id="access_stores" name="permissions[]"
+                                                               value="access_stores" {{ old('access_stores') ? 'checked' : '' }}>
+                                                        <label class="custom-control-label" for="access_stores">Access</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="custom-control custom-switch">
+                                                        <input type="checkbox" class="custom-control-input"
+                                                               id="create_stores" name="permissions[]"
+                                                               value="create_stores" {{ old('create_stores') ? 'checked' : '' }}>
+                                                        <label class="custom-control-label" for="create_stores">Create</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
